@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anushka Nerkar - Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <nav class="top-navbar">
+        <a href="index.html" class="nav-brand">ANUSHKA NERKAR</a>
+        <div class="nav-links">
+            <button class="nav-button primary-nav-btn" onclick="window.location.href='about.html'">MY PORTFOLIO</button>
+            <button class="nav-button" onclick="showContactPopup()">CONTACT</button>
+        </div>
+    </nav>
+
+    <main class="home-container">
+        <div class="intro-card">
+            <img src="anushka.jpeg" alt="Anushka Nerkar" class="profile-pic-home">
+            
+            <div class="intro-text">
+                <p class="greeting">Hello, I'm</p>
+                <h1>ANUSHKA NERKAR</h1>
+                <h2>MBA (Marketing) Student & Data Enthusiast</h2>
+                
+                <p class="summary-home">
+                    I am an enthusiastic MBA Marketing student passionate about leveraging **market research, digital strategy, and business analytics (Power BI, Tableau)** to drive impactful business growth. Ready to contribute fresh insights to a dynamic marketing environment.
+                </p>
+
+                <div class="home-buttons">
+                    <button class="primary-btn" onclick="window.location.href='about.html'">View My Portfolio <i class="fas fa-arrow-right"></i></button>
+                    <a href="cv.pdf" target="_blank" class="secondary-btn">Download CV <i class="fas fa-file-download"></i></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <div id="contact-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="hideContactPopup()">&times;</span>
+            <h3><span class="accent-text">/</span> Get In Touch</h3>
+            <p class="contact-line"><i class="fas fa-envelope accent-text"></i> nerkaranushka73@gmail.com</p>
+            <p class="contact-line"><i class="fas fa-phone accent-text"></i> 9373682501</p>
+            <p class="contact-line"><i class="fab fa-linkedin accent-text"></i> <a href="https://www.linkedin.com/in/anushka-nerkar-231928279" target="_blank">LinkedIn Profile</a></p>
+            <p class="contact-line"><i class="fas fa-map-marker-alt accent-text"></i> Dhule, Maharashtra, India</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

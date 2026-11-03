@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Visual Imprints & Posters | Anushka Nerkar</title>
+  <meta name="description" content="Authentic marketing posters, infographics, calligraphy, and brand collateral designed by Anushka Nerkar.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Modal Lightbox for Visuals */
+    .lightbox-backdrop {
+      position: fixed;
+      inset: 0;
+      background-color: rgba(5, 6, 8, 0.92);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--duration-fast) var(--ease-snappy);
+    }
+    .lightbox-backdrop.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .lightbox-card {
+      position: relative;
+      max-width: 900px;
+      max-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .lightbox-img {
+      max-height: 80vh;
+      max-width: 100%;
+      object-fit: contain;
+      border: 1px solid var(--line-strong);
+      border-radius: var(--radius-sm);
+    }
+    .lightbox-caption {
+      margin-top: 16px;
+      font-family: var(--font-mono);
+      font-size: 0.8125rem;
+      color: var(--ink-secondary);
+      text-align: center;
+    }
+    .lightbox-close {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      font-size: 1.75rem;
+      color: var(--ink-primary);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Navigation -->
+  <header class="top-nav">
+    <div class="container nav-bar">
+      <div class="nav-brand-group">
+        <a href="index.html" class="brand-title">ANUSHKA NERKAR</a>
+        <span class="brand-kicker">MBA MARKETING • FINANCE</span>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-item">Home</a>
+        <a href="experience.html" class="nav-item">Experience</a>
+        <a href="projects.html" class="nav-item">Projects</a>
+        <a href="skills.html" class="nav-item">Skills</a>
+        <a href="visuals.html" class="nav-item active">Visuals</a>
+        <a href="contact.html" class="nav-item">Contact</a>
+      </nav>
+
+      <a href="Anushka%20Nerkar%20Resume%20PDF.pdf" target="_blank" class="nav-resume-btn" download>
+        <span>Resume PDF ↗</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-intro">
+      <div class="container">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
+          <div class="page-category-tag" style="margin-bottom: 0;">
+            <span class="page-category-num">[04 // CREATIVE ARCHIVE]</span>
+            <span class="page-category-rule"></span>
+            <span>Graphic Production & Brand Collateral</span>
+          </div>
+          <span class="live-status-pill" style="border-color: rgba(167, 139, 250, 0.3); background-color: rgba(167, 139, 250, 0.08); color: var(--accent-lilac);">
+            <span class="radar-dot" style="background-color: var(--accent-lilac); box-shadow: 0 0 8px var(--accent-lilac);"></span>
+            <span>Click Image To Zoom</span>
+          </span>
+        </div>
+        <h1 class="page-main-heading">Visual Imprints & Collateral</h1>
+        <p class="page-main-desc">
+          A showcase of authentic creative artifacts created by Anushka. Click any item to inspect full details and craftsmanship.
+        </p>
+      </div>
+    </section>
+
+    <!-- Visuals Gallery Stream -->
+    <section class="container gallery-stream">
+
+      <!-- Item 1: Cadbury Poster -->
+      <article class="gallery-tile" onclick="openLightbox('assets/media/image14.jpeg', 'Cadbury Market Evolution & Competition Poster (Nov 2024)')">
+        <div class="tile-media">
+          <img src="assets/media/image14.jpeg" alt="Cadbury Marketing Poster" class="tile-img">
+        </div>
+        <div class="tile-caption">
+          <span class="tile-category">Physical Campaign Poster • Nov 2024</span>
+          <h2 class="tile-title">Cadbury Market Evolution & Competition</h2>
+          <p class="tile-desc">
+            Handcrafted strategic analysis poster examining Cadbury's historical milestones, global vs Indian market share distribution, and competitor battleground.
+          </p>
+        </div>
+      </article>
+
+      <!-- Item 2: HUL Strategy Infographic -->
+      <article class="gallery-tile" onclick="openLightbox('assets/media/image22.png', 'Hindustan Unilever Limited (HUL) Corporate Strategy Infographic')">
+        <div class="tile-media">
+          <img src="assets/media/image22.png" alt="HUL Corporate Strategy Infographic" class="tile-img">
+        </div>
+        <div class="tile-caption">
+          <span class="tile-category">Corporate Infographic Design</span>
+          <h2 class="tile-title">Strategies of Hindustan Unilever (HUL)</h2>
+          <p class="tile-desc">
+            Structured infographic mapping sustainability targets, brand diversification, digital AI integration, Project Shakti rural empowerment, and CSR frameworks.
+          </p>
+        </div>
+      </article>
+
+      <!-- Item 3: Whirlpool India Infographic -->
+      <article class="gallery-tile" onclick="openLightbox('assets/media/image23.jpeg', 'Whirlpool India Supply Chain & Distribution Channel Infographic')">
+        <div class="tile-media">
+          <img src="assets/media/image23.jpeg" alt="Whirlpool India Distribution Channel" class="tile-img">
+        </div>
+        <div class="tile-caption">
+          <span class="tile-category">Supply Chain Infographic</span>
+          <h2 class="tile-title">Whirlpool India Distribution Channel</h2>
+          <p class="tile-desc">
+            Systematic visual model tracing product flows from manufacturing hubs to national and regional distributors, modern retail chains, and consumers.
+          </p>
+        </div>
+      </article>
+
+      <!-- Item 4: Insplore Fieldwork Poster -->
+      <article class="gallery-tile" onclick="openLightbox('assets/media/image24.png', 'Insplore Consultants Internship Experience Infographic')">
+        <div class="tile-media">
+          <img src="assets/media/image24.png" alt="Insplore Consultants Experience" class="tile-img">
+        </div>
+        <div class="tile-caption">
+          <span class="tile-category">Internship Experience Poster</span>
+          <h2 class="tile-title">Insplore Consulting Experience</h2>
+          <p class="tile-desc">
+            Fieldwork summary infographic detailing BFSI sales execution, taxation & CTC calculations, market research methodology, and investment videos.
+          </p>
+        </div>
+      </article>
+
+      <!-- Item 5: Festive Identity & Logo -->
+      <article class="gallery-tile" onclick="openLightbox('assets/media/image25.png', 'Custom Calligraphy & Festive Brand Design')">
+        <div class="tile-media">
+          <img src="assets/media/image25.png" alt="Calligraphy Logo Design" class="tile-img">
+        </div>
+        <div class="tile-caption">
+          <span class="tile-category">Brand Identity & Calligraphy</span>
+          <h2 class="tile-title">Festive Identity & Typography</h2>
+          <p class="tile-desc">
+            Handcrafted Devanagari calligraphy for Shree Vakratunda combined with traditional floral motifs and festive digital communication branding.
+          </p>
+        </div>
+      </article>
+
+      <!-- Item 6: Wedding Stationery -->
+      <article class="gallery-tile" onclick="openLightbox('assets/media/image26.png', 'Bespoke Wedding Invitation Collateral')">
+        <div class="tile-media">
+          <img src="assets/media/image26.png" alt="Wedding Invitation Design" class="tile-img">
+        </div>
+        <div class="tile-caption">
+          <span class="tile-category">Print & Editorial Collateral</span>
+          <h2 class="tile-title">Bespoke Invitation Collateral</h2>
+          <p class="tile-desc">
+            Bespoke wedding stationery pairing celebratory floral illustrations, custom layout formatting, and editorial typography.
+          </p>
+        </div>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox-backdrop" onclick="closeLightbox(event)">
+    <div class="lightbox-card" onclick="event.stopPropagation()">
+      <button class="lightbox-close" onclick="closeLightbox()">&times;</button>
+      <img id="lightbox-img" src="" alt="Enlarged view" class="lightbox-img">
+      <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <div>© 2026 Anushka Nilesh Nerkar • Crafted with Editorial Standards</div>
+      <div class="footer-loc">Pune, Maharashtra</div>
+    </div>
+  </footer>
+
+  <script>
+    function openLightbox(src, caption) {
+      document.getElementById('lightbox-img').src = src;
+      document.getElementById('lightbox-caption').textContent = caption;
+      document.getElementById('lightbox').classList.add('active');
+    }
+    function closeLightbox() {
+      document.getElementById('lightbox').classList.remove('active');
+    }
+    window.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeLightbox();
+    });
+  </script>
+
+  <script src="transitions.js"></script>
+</body>
+</html>
