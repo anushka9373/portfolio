@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Skills, Tools & Certifications | Anushka Nerkar</title>
+  <title>Skills, Tools & Toolkit | Anushka Nerkar</title>
   <meta name="description" content="Technical software, analytical tools, creative video suites, and verified certifications of Anushka Nerkar.">
   <link rel="stylesheet" href="style.css">
 </head>
@@ -36,344 +36,177 @@
     <!-- Page Header -->
     <section class="page-intro">
       <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
-          <div class="page-category-tag" style="margin-bottom: 0;">
-            <span class="page-category-num">[03 // TOOLKIT]</span>
-            <span class="page-category-rule"></span>
-            <span>Software Applications & Analytics</span>
-          </div>
-          <span class="live-status-pill" style="border-color: rgba(230, 168, 67, 0.3); background-color: rgba(230, 168, 67, 0.08); color: var(--accent-base);">
-            <span class="radar-dot" style="background-color: var(--accent-base); box-shadow: 0 0 8px var(--accent-base);"></span>
-            <span>Verified Software Stack</span>
-          </span>
-        </div>
-        <h1 class="page-main-heading">Skills, Tools & Certifications</h1>
-        <p class="page-main-desc">
-          Structured into concrete software suites, analytical disciplines, and verified industry credentials. Combining technical financial modeling with digital campaign production.
-        </p>
+        <h1 class="page-main-heading">Skills & Toolkit</h1>
       </div>
     </section>
 
-    <!-- Skills Wrapper -->
+    <!-- Skills Bento Grid -->
     <section class="container skills-wrapper">
-
-      <!-- Cluster 1: Analytics & Data Intelligence -->
-      <div class="skill-cluster">
-        <div class="cluster-header">
-          <div class="cluster-title-group">
-            <span class="cluster-index">[01]</span>
-            <h2 class="cluster-title">Data Analytics & Business Intelligence Software</h2>
-          </div>
-          <span class="cluster-desc">Quantitative & BI Stack</span>
-        </div>
-
-        <div class="tools-card-grid">
-          
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Power BI</h3>
-              <span class="tool-status-tag">Certified</span>
-            </div>
-            <p class="tool-application">
-              Interactive dashboard architecture, KPI scorecards, business intelligence modeling, and executive report synthesis.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Domain: Business Intelligence</span>
-              <span>Level: Professional</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Tableau</h3>
-              <span class="tool-status-tag">Certified</span>
-            </div>
-            <p class="tool-application">
-              Visual data storytelling, multi-source data blending, trend forecasting charts, and customer segment mapping.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Domain: Data Visualization</span>
-              <span>Level: Certified</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Analytics with R</h3>
-              <span class="tool-status-tag">Certified</span>
-            </div>
-            <p class="tool-application">
-              Statistical computation, correlation modeling, hypothesis testing, and quantitative research survey evaluation.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Domain: Advanced Analytics</span>
-              <span>Level: Certified</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Microsoft Excel</h3>
-              <span class="tool-status-tag">Advanced</span>
-            </div>
-            <p class="tool-application">
-              Financial modeling, VLOOKUP/XLOOKUP, Pivot Tables, scenario analysis, and budget variance tracking.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Domain: Financial Modeling</span>
-              <span>Level: Advanced</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Marketing Analytics</h3>
-              <span class="tool-status-tag">Certified</span>
-            </div>
-            <p class="tool-application">
-              Campaign attribution, customer acquisition cost (CAC) calculations, lifetime value (LTV) projections, and funnel drops.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Domain: Performance Strategy</span>
-              <span>Level: Specialized</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Computer Accounting</h3>
-              <span class="tool-status-tag">Certified</span>
-            </div>
-            <p class="tool-application">
-              General ledger reconciliation, tax compliance workflows, GST calculation, and corporate financial records hygiene.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Domain: Fiscal Accounting</span>
-              <span>Level: Certified</span>
-            </div>
-          </div>
-
-        </div>
+      
+      <!-- Interactive Filter Bar -->
+      <div class="bento-filter-bar">
+        <button class="bento-filter-btn active" data-filter="all">All [10]</button>
+        <button class="bento-filter-btn" data-filter="bi">Analytics & BI</button>
+        <button class="bento-filter-btn" data-filter="creative">Motion & Creative</button>
+        <button class="bento-filter-btn" data-filter="strategy">Strategic Marketing</button>
       </div>
 
-      <!-- Cluster 2: Content Creation & Motion Design -->
-      <div class="skill-cluster">
-        <div class="cluster-header">
-          <div class="cluster-title-group">
-            <span class="cluster-index">[02]</span>
-            <h2 class="cluster-title">Content Creation & Motion Production Software</h2>
+      <div class="skills-bento-grid" id="skills-grid">
+        
+        <!-- Tool 1: Power BI -->
+        <article class="bento-card bento-span-4" data-category="bi">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">Power BI</h2>
+            <span class="bento-status-tag">Certified</span>
           </div>
-          <span class="cluster-desc">Creative & Video Stack</span>
-        </div>
-
-        <div class="tools-card-grid">
-          
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Canva Pro</h3>
-              <span class="tool-status-tag">Expert</span>
-            </div>
-            <p class="tool-application">
-              Authored 12+ corporate pitch presentations, multi-brand social media carousels, infographics, and brand collateral.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Deliverables: 12+ Pitch Decks</span>
-              <span>Level: Advanced</span>
-            </div>
+          <p class="bento-tool-desc">
+            Interactive dashboard architecture, KPI scorecards, business intelligence modeling, and executive report synthesis.
+          </p>
+          <div class="bento-meta-footer">
+            <span>Business Intelligence</span>
+            <span>Professional</span>
           </div>
+        </article>
 
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">VN Editor & Inshot</h3>
-              <span class="tool-status-tag">Proficient</span>
-            </div>
-            <p class="tool-application">
-              Short-form video editing, beat-matched reels production, audio mixing, captioning, and viral pacing optimization.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Platforms: Reels, Shorts, TikTok</span>
-              <span>Level: Production</span>
-            </div>
+        <!-- Tool 2: Tableau -->
+        <article class="bento-card bento-span-4" data-category="bi">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">Tableau</h2>
+            <span class="bento-status-tag">Certified</span>
           </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Alight Motion & CapCut</h3>
-              <span class="tool-status-tag">Proficient</span>
-            </div>
-            <p class="tool-application">
-              Keyframe motion graphics, animated lower-thirds, video kinetic typography, and multi-layer visual transitions.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Domain: Motion Design</span>
-              <span>Level: Creative</span>
-            </div>
+          <p class="bento-tool-desc">
+            Visual data storytelling, multi-source data blending, trend forecasting charts, and customer segment mapping.
+          </p>
+          <div class="bento-meta-footer">
+            <span>Data Visualization</span>
+            <span>Certified</span>
           </div>
+        </article>
 
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Microsoft PowerPoint</h3>
-              <span class="tool-status-tag">Executive</span>
-            </div>
-            <p class="tool-application">
-              Institutional investor pitch decks, corporate boardroom slide decks, master templates, and visual hierarchy hygiene.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Domain: Presentation Design</span>
-              <span>Level: Advanced</span>
-            </div>
+        <!-- Tool 3: Analytics with R -->
+        <article class="bento-card bento-span-4" data-category="bi">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">Analytics with R</h2>
+            <span class="bento-status-tag">Certified</span>
           </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Videography & Camera</h3>
-              <span class="tool-status-tag">Practical</span>
-            </div>
-            <p class="tool-application">
-              On-site smartphone & camera shooting, framing, creative angle selection, lighting setup, and video asset curation.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Focus: Commercial Shoots</span>
-              <span>Level: Fieldwork</span>
-            </div>
+          <p class="bento-tool-desc">
+            Statistical computation, correlation modeling, hypothesis testing, and quantitative research survey evaluation.
+          </p>
+          <div class="bento-meta-footer">
+            <span>Advanced Analytics</span>
+            <span>Certified</span>
           </div>
+        </article>
 
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">AI Workflow Systems</h3>
-              <span class="tool-status-tag">Integrated</span>
+        <!-- Tool 4: Canva Pro (8-span) -->
+        <article class="bento-card bento-span-8" data-category="creative">
+          <div class="bento-top-row">
+            <div>
+              <h2 class="bento-tool-title">Canva Pro Architecture</h2>
+              <span style="font-family: var(--font-mono); font-size: 0.75rem; color: var(--accent-base);">12 Pitch Presentations Authored</span>
             </div>
-            <p class="tool-application">
-              Prompt design for accelerated copy ideation, market research synthesis, audience persona drafting, and outline creation.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Focus: Workflow Speed</span>
-              <span>Level: Applied</span>
-            </div>
+            <span class="bento-status-tag">Executive Level</span>
           </div>
+          <p class="bento-tool-desc">
+            Authored 12 corporate pitch presentations, multi-brand social media carousels, corporate infographics, and brand collateral. Translating complex corporate data into high-conversion executive slide narratives.
+          </p>
+          <div class="bento-meta-footer">
+            <span>12 Live Presentations</span>
+            <span>Mastery</span>
+          </div>
+        </article>
 
-        </div>
+        <!-- Tool 5: Microsoft Excel -->
+        <article class="bento-card bento-span-4" data-category="bi">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">Microsoft Excel</h2>
+            <span class="bento-status-tag">Advanced</span>
+          </div>
+          <p class="bento-tool-desc">
+            Financial modeling, VLOOKUP/XLOOKUP, Pivot Tables, scenario analysis, and budget variance tracking.
+          </p>
+          <div class="bento-meta-footer">
+            <span>Financial Modeling</span>
+            <span>Advanced</span>
+          </div>
+        </article>
+
+        <!-- Tool 6: Empirical Market Research (6-span) -->
+        <article class="bento-card bento-span-6" data-category="strategy">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">Empirical Market Research</h2>
+            <span class="bento-status-tag">N = 100 Surveyed</span>
+          </div>
+          <p class="bento-tool-desc">
+            Survey instrument design, sample administration (100 verified BFSI respondents), questionnaire structuring, and qualitative trend extraction on consumer trust.
+          </p>
+          <div class="bento-meta-footer">
+            <span>BFSI Study Proof</span>
+            <span>Empirical Execution</span>
+          </div>
+        </article>
+
+        <!-- Tool 7: Social Media Orchestration (6-span) -->
+        <article class="bento-card bento-span-6" data-category="strategy">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">Social Media Orchestration</h2>
+            <span class="bento-status-tag">Multi-Platform</span>
+          </div>
+          <p class="bento-tool-desc">
+            End-to-end management of publishing queues across Instagram, Facebook, Pinterest, and YouTube with unified editorial calendars and reel pacing.
+          </p>
+          <div class="bento-meta-footer">
+            <span>Fotoowl.ai Experience</span>
+            <span>Multi-Channel</span>
+          </div>
+        </article>
+
+        <!-- Tool 8: VN Editor & Inshot -->
+        <article class="bento-card bento-span-4" data-category="creative">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">VN Editor & Inshot</h2>
+            <span class="bento-status-tag">Production</span>
+          </div>
+          <p class="bento-tool-desc">
+            Short-form video editing, beat-matched reels production, audio mixing, captioning, and viral pacing optimization.
+          </p>
+          <div class="bento-meta-footer">
+            <span>Reels & Video</span>
+            <span>Production</span>
+          </div>
+        </article>
+
+        <!-- Tool 9: Alight Motion & CapCut -->
+        <article class="bento-card bento-span-4" data-category="creative">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">Alight Motion & CapCut</h2>
+            <span class="bento-status-tag">Creative</span>
+          </div>
+          <p class="bento-tool-desc">
+            Keyframe motion graphics, animated lower-thirds, video kinetic typography, and multi-layer visual transitions.
+          </p>
+          <div class="bento-meta-footer">
+            <span>Motion Design</span>
+            <span>Creative</span>
+          </div>
+        </article>
+
+        <!-- Tool 10: SWOT & PESTLE Auditing -->
+        <article class="bento-card bento-span-4" data-category="strategy">
+          <div class="bento-top-row">
+            <h2 class="bento-tool-title">SWOT & PESTLE Auditing</h2>
+            <span class="bento-status-tag">Strategy</span>
+          </div>
+          <p class="bento-tool-desc">
+            Systematic structural analysis evaluating external macro risks, regulatory mandates, and internal core competencies.
+          </p>
+          <div class="bento-meta-footer">
+            <span>Insplore Engagement</span>
+            <span>Frameworks</span>
+          </div>
+        </article>
+
       </div>
-
-      <!-- Cluster 3: Strategic Marketing Capabilities -->
-      <div class="skill-cluster">
-        <div class="cluster-header">
-          <div class="cluster-title-group">
-            <span class="cluster-index">[03]</span>
-            <h2 class="cluster-title">Strategic Marketing Disciplines</h2>
-          </div>
-          <span class="cluster-desc">Strategic Methodologies</span>
-        </div>
-
-        <div class="tools-card-grid">
-          
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Empirical Market Research</h3>
-              <span class="tool-status-tag">Field Proven</span>
-            </div>
-            <p class="tool-application">
-              Survey instrument design, sample administration (100 respondents in BFSI), questionnaire structuring, and qualitative trend extraction.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Proof: BFSI Study (N=100)</span>
-              <span>Execution: Complete</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Social Media Orchestration</h3>
-              <span class="tool-status-tag">Multi-Channel</span>
-            </div>
-            <p class="tool-application">
-              End-to-end management of publishing queues across Instagram, Facebook, Pinterest, and YouTube with unified editorial calendars.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Experience: Fotoowl.ai</span>
-              <span>Scope: Cross-Platform</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">SWOT & PESTLE Auditing</h3>
-              <span class="tool-status-tag">Frameworks</span>
-            </div>
-            <p class="tool-application">
-              Systematic structural analysis evaluating external macro risks, regulatory mandates, and internal core competencies of retail financial products.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Experience: Insplore</span>
-              <span>Domain: Strategy</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Direct Campaign Promotion</h3>
-              <span class="tool-status-tag">Sales & Outreach</span>
-            </div>
-            <p class="tool-application">
-              Direct-to-consumer insurance product promotion for Bank of Baroda's <em>Maha Jeevan Plus</em>, combining in-person trust building with digital assets.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Partner: Bank of Baroda</span>
-              <span>Outcome: Real Lead Gen</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Brand Voice Governance</h3>
-              <span class="tool-status-tag">Identity</span>
-            </div>
-            <p class="tool-application">
-              Managing distinct brand guidelines, preventing cross-brand messaging dilution, and establishing audience engagement playbooks.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Research: Multi-Brand Study</span>
-              <span>Focus: Brand Consistency</span>
-            </div>
-          </div>
-
-          <div class="tool-box-card">
-            <div class="tool-top-row">
-              <h3 class="tool-name">Event Coordination</h3>
-              <span class="tool-status-tag">Leadership</span>
-            </div>
-            <p class="tool-application">
-              Lead volunteer and promotional manager for Dr. D.Y. Patil IMR's flagship corporate fest <strong>Mahasangram</strong>.
-            </p>
-            <div class="tool-meta-footer">
-              <span>Scale: Campus Flagship</span>
-              <span>Role: Promotion & Lead</span>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Verified Certifications Wall -->
-      <div class="cert-ribbon-block">
-        <div class="page-category-tag" style="margin-bottom: 0;">
-          <span class="page-category-num">VERIFIED CREDENTIALS</span>
-          <span class="page-category-rule"></span>
-          <span>Official Industry Certifications</span>
-        </div>
-
-        <div class="cert-ribbon-grid">
-          <div class="cert-credential-item"><span class="cert-dot-solid"></span> HubSpot Digital Marketing Certified</div>
-          <div class="cert-credential-item"><span class="cert-dot-solid"></span> Power BI Business Intelligence Certified</div>
-          <div class="cert-credential-item"><span class="cert-dot-solid"></span> Tableau Data Visualization Certified</div>
-          <div class="cert-credential-item"><span class="cert-dot-solid"></span> Advanced Analytics using R Certified</div>
-          <div class="cert-credential-item"><span class="cert-dot-solid"></span> Certified in Marketing Analytics</div>
-          <div class="cert-credential-item"><span class="cert-dot-solid"></span> Computer Accounting Certified</div>
-          <div class="cert-credential-item"><span class="cert-dot-solid"></span> MS-CIT Certified</div>
-          <div class="cert-credential-item"><span class="cert-dot-solid"></span> BBA in Finance (8.26 CGPA)</div>
-        </div>
-      </div>
-
     </section>
   </main>
 
@@ -385,6 +218,23 @@
     </div>
   </footer>
 
+  <script>
+    document.querySelectorAll('.bento-filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.bento-filter-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        
+        document.querySelectorAll('.bento-card').forEach(card => {
+          if (filter === 'all' || card.dataset.category === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
   <script src="transitions.js"></script>
 </body>
 </html>

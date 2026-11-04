@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ANUSHKA NERKAR — Marketing Strategy & Consumer Insights</title>
+<link rel="stylesheet" href="style.css">
 <script>
 (function(r){try{if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches&&typeof r.animate==="function"){r.classList.add("px-intro");window.__pxFailsafe=setTimeout(function(){r.classList.remove("px-intro")},4000)}}catch(e){}})(document.documentElement);
 </script>
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 :root{
-  --bg:#0a0b0e;
-  --ink:#ffffff;
-  --panel:#0a0b0e;
-  --ring:rgba(255,255,255,.5);
-  --accent:#d4a359;
+  --bg:#08090c;
+  --ink:#f4f5f8;
+  --panel:#0f1117;
+  --ring:rgba(197,160,89,.35);
+  --accent:#c5a059;
   --vw:100vw; --vh:100vh;
   --sc:max(calc(var(--vw) / 1280), calc(var(--vh) / 800));
   --u:clamp(.72px, min(calc(var(--vw) / 1280), calc(var(--vh) / 800)), 3px);
@@ -23,13 +24,10 @@
   --sans:"Plus Jakarta Sans","Space Grotesk",-apple-system,BlinkMacSystemFont,sans-serif;
   --display:"Space Grotesk","Plus Jakarta Sans",sans-serif;
 
-  /* =====================================================================
-     HERO PHOTO ADJUSTMENT CONTROLS
-     Change these values anytime to adjust the portrait size and position:
-     ===================================================================== */
-  --photo-scale: 0.86;                 /* SIZE: 1.0 = 100%, 0.86 = 86% (smaller), 0.95 = 95% */
-  --photo-y: calc(45 * var(--sc));    /* VERTICAL: increase (e.g. 60px) to move down, decrease to move up */
-  --photo-x: 0px;                     /* HORIZONTAL: negative = left, positive = right */
+  /* HERO PHOTO ADJUSTMENT CONTROLS */
+  --photo-scale: 0.86;
+  --photo-y: calc(45 * var(--sc));
+  --photo-x: 0px;
 }
 @supports (height:100dvh){ :root{ --vh:100dvh; } }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
@@ -52,33 +50,21 @@ body{position:relative;width:100%;height:var(--vh);min-height:100%}
 .ui{position:absolute;inset:0;pointer-events:none}
 .ui>*{pointer-events:auto}
 .copy{position:absolute;font:500 calc(13 * var(--u))/calc(17.5 * var(--u)) var(--mono);letter-spacing:0.02em;color:var(--ink);text-transform:uppercase;white-space:nowrap}
-.copy--tl{left:calc(34.5 * var(--u));top:calc(46.6 * var(--u))}
-.copy--tr{right:calc(45 * var(--u));top:calc(39 * var(--u));text-align:right}
+.copy--tl{left:calc(34.5 * var(--u));top:calc(88px + 14 * var(--u))}
+.copy--tr{right:calc(45 * var(--u));top:calc(88px + 14 * var(--u));text-align:right}
 .copy--bl{left:calc(34.5 * var(--u));bottom:calc(39.5 * var(--u))}
 .copy--br{right:calc(45 * var(--u));bottom:calc(39.5 * var(--u));text-align:right}
-.nav{position:absolute;top:calc(28 * var(--u));left:50%;transform:translateX(-50%);
-  height:calc(54 * var(--u));background:var(--panel);border:1px solid #232733;display:flex;align-items:center;justify-content:space-between;
-  padding:0 calc(20 * var(--u));gap:calc(24 * var(--u));border-radius:4px}
-.logo{display:flex;flex-direction:column;color:var(--ink);text-decoration:none;font:700 calc(15 * var(--u))/1.1 var(--display);letter-spacing:0.06em}
-.logo-sub{font:500 calc(9 * var(--u))/1 var(--mono);color:var(--accent);letter-spacing:0.12em;margin-top:2px}
-.nav-pages{display:flex;align-items:center;gap:calc(16 * var(--u))}
-.nav-page-link{color:rgba(255,255,255,0.7);text-decoration:none;font:500 calc(11 * var(--u))/1 var(--mono);letter-spacing:0.06em;text-transform:uppercase;transition:color .2s}
-.nav-page-link:hover{color:#ffffff}
 .ctas{position:absolute;left:calc(35 * var(--u));bottom:calc(98 * var(--u));display:flex;flex-direction:column;gap:calc(9 * var(--u))}
-.btn{display:flex;align-items:center;justify-content:center;width:calc(156 * var(--u));height:calc(45 * var(--u));background:var(--panel);color:var(--ink);text-decoration:none;
-  font:600 calc(12 * var(--u))/1 var(--mono);letter-spacing:0.04em;text-transform:uppercase;white-space:nowrap;border:1px solid #2c3242;border-radius:4px;transition:background .2s,color .2s,border-color .2s}
-.btn:hover{background:var(--accent);color:var(--panel);border-color:var(--accent)}
+.btn{display:flex;align-items:center;justify-content:center;width:calc(156 * var(--u));height:calc(45 * var(--u));background:rgba(15, 17, 23, 0.85);color:var(--ink);text-decoration:none;
+  font:600 calc(12 * var(--u))/1 var(--mono);letter-spacing:0.04em;text-transform:uppercase;white-space:nowrap;border:1px solid rgba(255,255,255,0.12);border-radius:4px;transition:background .2s,color .2s,border-color .2s}
+.btn:hover{background:var(--accent);color:#08090c;border-color:var(--accent)}
 a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:3px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 @media (orientation:portrait) and (min-width:561px){ :root{ --u:clamp(.72px, calc(var(--vw) / 860), 1.6px); } }
-@media (max-width:768px){
-  .nav-pages{display:none}
-}
 @media (max-width:560px){
   :root{ --u:clamp(.72px, calc(var(--vw) / 470), 1px); }
-  .nav{left:calc(20 * var(--u));right:calc(20 * var(--u));width:auto;transform:none;top:calc(20 * var(--u))}
-  .copy--tl{left:calc(20 * var(--u));top:calc(96 * var(--u))}
-  .copy--tr{right:calc(20 * var(--u));top:calc(96 * var(--u))}
+  .copy--tl{left:calc(20 * var(--u));top:calc(88px + 10 * var(--u))}
+  .copy--tr{right:calc(20 * var(--u));top:calc(88px + 10 * var(--u))}
   .copy--bl{left:calc(20 * var(--u));bottom:calc(24 * var(--u))}
   .ctas{left:calc(20 * var(--u));bottom:calc(76 * var(--u))}
   .copy--br{right:calc(20 * var(--u));bottom:calc(24 * var(--u))}
@@ -91,13 +77,36 @@ a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:3px}
 .px-intro .title span{translate:0 105%}
 .px-intro .ln{overflow:hidden}
 .px-intro .ln>span{translate:0 105%}
-.px-intro .nav{clip-path:inset(0 50% 0 50%)}
-.px-intro .logo,.px-intro .nav-pages{opacity:0}
+.px-intro .top-nav{opacity:0;translate:0 -20px}
 .px-intro .btn{clip-path:inset(0 100% 0 0)}
 .px-intro .lbl{opacity:0}
 </style>
 </head>
 <body>
+
+<!-- Unified Top Navigation -->
+<header class="top-nav" style="position: absolute; top: 0; left: 0; right: 0; z-index: 100; background: rgba(8, 9, 12, 0.75);">
+  <div class="container nav-bar">
+    <div class="nav-brand-group">
+      <a href="index.html" class="brand-title">ANUSHKA NERKAR</a>
+      <span class="brand-kicker">MBA MARKETING • FINANCE</span>
+    </div>
+
+    <nav class="nav-menu">
+      <a href="index.html" class="nav-item active">Home</a>
+      <a href="experience.html" class="nav-item">Experience</a>
+      <a href="projects.html" class="nav-item">Projects</a>
+      <a href="skills.html" class="nav-item">Skills</a>
+      <a href="visuals.html" class="nav-item">Visuals</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+
+    <a href="Anushka%20Nerkar%20Resume%20PDF.pdf" target="_blank" class="nav-resume-btn" download>
+      <span>Resume PDF ↗</span>
+    </a>
+  </div>
+</header>
+
 <main class="stage">
   <div class="scene" aria-hidden="false">
     <img src="hero_portrait.png" alt="Editorial Portrait of Anushka Nerkar in Sculptural Black Drapes" draggable="false">
@@ -118,19 +127,6 @@ a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:3px}
     <h1 class="title" aria-label="Anushka Nerkar"><span aria-hidden="true" style="--k:1.5">A</span><span aria-hidden="true" style="--k:-3.0">N</span><span aria-hidden="true" style="--k:0.5">U</span><span aria-hidden="true" style="--k:1.5">S</span><span aria-hidden="true" style="--k:1.0">H</span><span aria-hidden="true" style="--k:-1.0">K</span><span aria-hidden="true" style="--k:-0.5">A</span><span aria-hidden="true" style="--k:2.0">&nbsp;</span><span aria-hidden="true" style="--k:1.0">N</span><span aria-hidden="true" style="--k:-1.0">E</span><span aria-hidden="true" style="--k:0.5">R</span><span aria-hidden="true" style="--k:1.0">K</span><span aria-hidden="true" style="--k:-0.5">A</span><span aria-hidden="true" style="--k:-0.5">R</span></h1>
   </div>
   <div class="ui">
-    <nav class="nav" aria-label="Primary">
-      <a class="logo" href="index.html" aria-label="Anushka Nerkar Home">
-        <span>ANUSHKA NERKAR</span>
-        <span class="logo-sub">MARKETING • MBA '26</span>
-      </a>
-      <div class="nav-pages">
-        <a class="nav-page-link" href="experience.html">Experience</a>
-        <a class="nav-page-link" href="projects.html">Projects</a>
-        <a class="nav-page-link" href="skills.html">Skills</a>
-        <a class="nav-page-link" href="visuals.html">Visuals</a>
-        <a class="nav-page-link" href="contact.html">Contact</a>
-      </div>
-    </nav>
     <p class="copy copy--tl"><span class="ln"><span>Marketing Strategy</span></span><span class="ln"><span>Consumer Insights</span></span></p>
     <p class="copy copy--tr"><span class="ln"><span>Dr. D.Y. Patil IMR</span></span><span class="ln"><span>Pune, Maharashtra</span></span><span class="ln"><span>MBA Marketing</span></span></p>
     <div class="ctas">
@@ -147,7 +143,6 @@ a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:3px}
   if(!root.classList.contains("px-intro")) return;
   var EXPO ="cubic-bezier(.16,1,.3,1)",
       DRAW ="cubic-bezier(.62,.04,.22,1)",
-      PANEL="cubic-bezier(.77,0,.18,1)",
       SOFT ="cubic-bezier(.25,1,.5,1)";
   var narrow=matchMedia("(max-width:560px)").matches;
   var S=narrow?.8:1;
@@ -166,10 +161,8 @@ a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:3px}
     $(".title span").forEach(function(s,i){
       add(s,[{translate:"0 105%"},{translate:"0 0"}],{duration:1000,delay:200+i*38*S,easing:EXPO});
     });
-    add(document.querySelector(".nav"),[{clipPath:"inset(0 50% 0 50%)"},{clipPath:"inset(0 0% 0 0%)"}],{duration:800,delay:450,easing:PANEL});
-    $(".logo,.nav-pages").forEach(function(e,i){
-      add(e,[{opacity:0,translate:"0 35%"},{opacity:1,translate:"0 0"}],{duration:600,delay:780+i*70,easing:SOFT});
-    });
+    var topNav=document.querySelector(".top-nav");
+    if(topNav) add(topNav,[{opacity:0,translate:"0 -20px"},{opacity:1,translate:"0 0"}],{duration:650,delay:300,easing:EXPO});
     function lines(sel,start){
       $(sel+" .ln>span").forEach(function(s,i){
         add(s,[{translate:"0 105%"},{translate:"0 0"}],{duration:800,delay:start+i*70*S,easing:EXPO});
@@ -177,7 +170,7 @@ a:focus-visible,button:focus-visible{outline:2px solid #fff;outline-offset:3px}
     }
     lines(".copy--tl",700); lines(".copy--tr",760);
     $(".btn").forEach(function(b,i){
-      add(b,[{clipPath:"inset(0 100% 0 0)"},{clipPath:"inset(0 0% 0 0)"}],{duration:750,delay:950+i*90*S,easing:PANEL});
+      add(b,[{clipPath:"inset(0 100% 0 0)"},{clipPath:"inset(0 0% 0 0)"}],{duration:750,delay:950+i*90*S,easing:EXPO});
     });
     $(".lbl").forEach(function(l,i){
       add(l,[{opacity:0,translate:"0 .45em"},{opacity:1,translate:"0 0"}],{duration:550,delay:1200+i*90*S,easing:SOFT});

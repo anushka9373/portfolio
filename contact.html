@@ -36,21 +36,7 @@
     <!-- Page Header -->
     <section class="page-intro">
       <div class="container">
-        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px; flex-wrap: wrap; gap: 12px;">
-          <div class="page-category-tag" style="margin-bottom: 0;">
-            <span class="page-category-num">[05 // INBOX]</span>
-            <span class="page-category-rule"></span>
-            <span>Direct Channels & Availability</span>
-          </div>
-          <span class="live-status-pill">
-            <span class="radar-dot"></span>
-            <span>Immediate Response</span>
-          </span>
-        </div>
         <h1 class="page-main-heading">Get in Touch</h1>
-        <p class="page-main-desc">
-          Available for corporate marketing strategy, consumer market research, digital brand management, and campaign roles. Based in Pune, Maharashtra.
-        </p>
       </div>
     </section>
 
@@ -93,8 +79,8 @@
         </div>
 
         <div style="padding-top: 16px;">
-          <a href="Anushka%20Nerkar%20Resume%20PDF.pdf" target="_blank" class="btn btn-primary" style="width: 100%;" download>
-            <span>Download Verified Resume PDF</span>
+          <a href="Anushka%20Nerkar%20Resume%20PDF.pdf" target="_blank" class="btn-primary" style="width: 100%;" download>
+            <span>Download Verified Resume PDF ↗</span>
           </a>
         </div>
 
@@ -103,30 +89,34 @@
       <!-- Professional Snapshot -->
       <div style="display: flex; flex-direction: column; gap: 32px;">
         
-        <div style="background-color: var(--bg-surface); border: 1px solid var(--line-subtle); border-radius: var(--radius-md); padding: 36px;">
-          <div class="page-category-tag" style="margin-bottom: 12px;">
-            <span>Academic Credentials</span>
+        <div class="contact-card-box" style="padding: 36px;">
+          <div class="editorial-tag-bracket" style="margin-bottom: 16px;">
+            <span class="bracket-num">[CREDENTIALS]</span>
+            <span class="bracket-rule"></span>
+            <span>Academic Records</span>
           </div>
-          <div style="display: flex; flex-direction: column; gap: 16px;">
+          <div style="display: flex; flex-direction: column; gap: 18px;">
             <div>
-              <strong style="color: var(--ink-primary); font-size: 1.0625rem;">M.B.A. - Marketing Management</strong> (2024 – 2026)<br>
+              <strong style="color: var(--ink-primary); font-size: 1.0625rem; font-family: var(--font-heading);">M.B.A. - Marketing Management</strong> (2024 – 2026)<br>
               <span style="color: var(--ink-secondary); font-size: 0.9375rem;">Dr. D. Y. Patil Institute of Management and Research, Pune</span><br>
-              <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-base);">7.73 / 10 CGPA</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-base); display: inline-block; margin-top: 6px;">7.73 / 10 CGPA</span>
             </div>
-            <div style="padding-top: 12px; border-top: 1px solid var(--line-subtle);">
-              <strong style="color: var(--ink-primary); font-size: 1.0625rem;">Bachelor of Business Administration (BBA) - Finance</strong> (2021 – 2024)<br>
+            <div style="padding-top: 16px; border-top: 1px solid var(--line-subtle);">
+              <strong style="color: var(--ink-primary); font-size: 1.0625rem; font-family: var(--font-heading);">Bachelor of Business Administration (BBA) - Finance</strong> (2021 – 2024)<br>
               <span style="color: var(--ink-secondary); font-size: 0.9375rem;">K. B. C. North Maharashtra University, Jalgaon</span><br>
-              <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-base);">8.26 / 10 CGPA</span>
+              <span style="font-family: var(--font-mono); font-size: 0.8125rem; color: var(--accent-base); display: inline-block; margin-top: 6px;">8.26 / 10 CGPA</span>
             </div>
           </div>
         </div>
 
-        <div style="background-color: var(--bg-surface); border: 1px solid var(--line-subtle); border-radius: var(--radius-md); padding: 36px;">
-          <div class="page-category-tag" style="margin-bottom: 12px;">
-            <span>Immediate Availability</span>
+        <div class="contact-card-box" style="padding: 36px;">
+          <div class="editorial-tag-bracket" style="margin-bottom: 16px;">
+            <span class="bracket-num">[STATUS]</span>
+            <span class="bracket-rule"></span>
+            <span>Placement & Interview Availability</span>
           </div>
-          <p style="color: var(--ink-secondary); font-size: 0.9375rem; line-height: 1.6;">
-            Open to on-site, hybrid, and remote marketing opportunities in Pune and major metropolitan hubs across India. Feel free to reach out via email or phone for interview scheduling or collaborative strategy work.
+          <p style="color: var(--ink-secondary); font-size: 0.9375rem; line-height: 1.65;">
+            Open to on-site, hybrid, and remote marketing strategy roles in Pune, Mumbai, and major metropolitan business hubs across India. Feel free to connect directly via email or telephone.
           </p>
         </div>
 
@@ -148,8 +138,8 @@
       try {
         await navigator.clipboard.writeText(text);
         const originalText = btn.textContent;
-        btn.textContent = "Copied!";
-        btn.style.color = "#22c55e";
+        btn.textContent = "Copied! [✓]";
+        btn.style.color = "#c5a059";
         setTimeout(() => {
           btn.textContent = originalText;
           btn.style.color = "";
@@ -159,7 +149,6 @@
       }
     }
   </script>
-
   <script src="transitions.js"></script>
 </body>
 </html>
