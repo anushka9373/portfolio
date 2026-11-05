@@ -1,4 +1,4 @@
-/**
+/*  *//**
  * ANUSHKA NERKAR — LUXURY MOTION & PHYSICS ENGINE
  * 
  * 1. Aerodynamic Dart Cursor & Trailing Satellite Particle Follower
@@ -39,15 +39,9 @@
       </svg>
     `;
 
-    // 2. Trailing Satellite Follower Particle (Smooth spring trail behind the dart's tail)
-    const satellite = document.createElement('div');
-    satellite.className = 'trailing-satellite-dot';
-
     document.body.appendChild(dart);
-    document.body.appendChild(satellite);
 
     let mouseX = -100, mouseY = -100;
-    let satX = -100, satY = -100;
     let isVisible = false;
 
     window.addEventListener('mousemove', function (e) {
@@ -56,9 +50,6 @@
       if (!isVisible) {
         isVisible = true;
         dart.style.opacity = '1';
-        satellite.style.opacity = '1';
-        satX = mouseX + 16;
-        satY = mouseY + 11;
       }
       dart.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
     }, { passive: true });
@@ -80,27 +71,12 @@
     document.addEventListener('mouseleave', function () {
       isVisible = false;
       dart.style.opacity = '0';
-      satellite.style.opacity = '0';
     });
 
     document.addEventListener('mouseenter', function () {
       isVisible = true;
       dart.style.opacity = '1';
-      satellite.style.opacity = '1';
     });
-
-    // Satellite fluid spring lerp follower loop
-    function renderSatellite() {
-      const targetX = mouseX + 15;
-      const targetY = mouseY + 11;
-
-      satX += (targetX - satX) * 0.22;
-      satY += (targetY - satY) * 0.22;
-
-      satellite.style.transform = `translate3d(${satX.toFixed(2)}px, ${satY.toFixed(2)}px, 0)`;
-      requestAnimationFrame(renderSatellite);
-    }
-    requestAnimationFrame(renderSatellite);
 
     // Click micro-burst
     window.addEventListener('mousedown', function (e) {
@@ -115,7 +91,6 @@
       const interactive = e.target.closest('a, button, .bento-card, .sticky-deck-card, .gallery-tile, .experience-hero-card, .copy-pill-btn, .edu-item');
       if (interactive) {
         dart.classList.add('cursor-active');
-        satellite.classList.add('cursor-active');
       }
     });
 
@@ -123,7 +98,6 @@
       const interactive = e.target.closest('a, button, .bento-card, .sticky-deck-card, .gallery-tile, .experience-hero-card, .copy-pill-btn, .edu-item');
       if (interactive && (!e.relatedTarget || !e.relatedTarget.closest('a, button, .bento-card, .sticky-deck-card, .gallery-tile, .experience-hero-card, .copy-pill-btn, .edu-item'))) {
         dart.classList.remove('cursor-active');
-        satellite.classList.remove('cursor-active');
       }
     });
   }

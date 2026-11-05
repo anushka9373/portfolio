@@ -1,0 +1,14 @@
+# Office temp files
+~$*
+*.pptx
+Portfolio Of Anushka Nerkar.pdf
+
+# Dev scratch & temp folders
+scratch/
+extracted_media_preview/
+
+# OS / Editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
