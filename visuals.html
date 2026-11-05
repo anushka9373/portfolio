@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Visuals & Creative Works | Anushka Nerkar</title>
-  <meta name="description" content="Curated corporate pitch presentations, brand infographics, calligraphy logos, invitations, photography, and videography by Anushka Nerkar.">
+  <meta name="description" content="Curated corporate pitch presentations, Fotoowl.ai media campaigns, brand infographics, calligraphy logos, invitations, photography, and videography by Anushka Nerkar.">
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Fullscreen Editorial Lightbox */
+    /* Fullscreen Editorial Lightbox (Images & Video) */
     .lightbox-backdrop {
       position: fixed;
       inset: 0;
@@ -35,13 +35,15 @@
       flex-direction: column;
       align-items: center;
     }
-    .lightbox-img {
+    .lightbox-img,
+    .lightbox-video {
       max-height: 78vh;
       max-width: 100%;
       object-fit: contain;
       border: 1px solid var(--line-strong);
       border-radius: var(--radius-sm);
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.8);
+      background: #000;
     }
     .lightbox-caption {
       margin-top: 18px;
@@ -105,7 +107,8 @@
       
       <!-- Interactive Filter Bar -->
       <div class="bento-filter-bar">
-        <button class="bento-filter-btn active" data-filter="all">All [10 Works]</button>
+        <button class="bento-filter-btn active" data-filter="all">All Works</button>
+        <button class="bento-filter-btn" data-filter="fotoowl">FotoOwl.ai Works</button>
         <button class="bento-filter-btn" data-filter="presentations">Presentations</button>
         <button class="bento-filter-btn" data-filter="infographics">Infographics</button>
         <button class="bento-filter-btn" data-filter="logos">Logos & Invitations</button>
@@ -113,6 +116,132 @@
       </div>
 
       <div class="gallery-stream" id="visuals-grid">
+
+        <!-- ================= FOTOOWL.AI SECTION ================= -->
+
+        <!-- FotoOwl 01: Video Thumbnail -->
+        <article class="gallery-tile" data-category="fotoowl" onclick="openLightbox('assets/media/fotoowl_thumbnail.jpg', 'FotoOwl.ai: Video Reel Thumbnail Design')">
+          <div class="tile-media">
+            <img src="assets/media/fotoowl_thumbnail.jpg" alt="FotoOwl Video Thumbnail Design" class="tile-img" loading="lazy">
+            <div class="tile-hover-overlay">
+              <span class="tile-inspect-pill">Inspect Artwork ⊕</span>
+            </div>
+          </div>
+          <div class="tile-caption">
+            <div class="tile-top-row">
+              <span class="tile-category">FotoOwl.ai • Video Thumbnail</span>
+              <span class="tile-index-tag">[FOTOOWL // 01]</span>
+            </div>
+            <h2 class="tile-title">FotoOwl.ai: Video Reel Thumbnail Design</h2>
+            <p class="tile-desc">
+              High-impact promotional thumbnail crafted for social media engagement: <em>"From a Great Experience to What's Coming Next"</em>.
+            </p>
+            <div class="tile-action-footer">
+              <span>Thumbnail Design</span>
+              <span style="color: var(--accent-base);">Inspect Fullscreen ↗</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- FotoOwl 02: Static Post -->
+        <article class="gallery-tile" data-category="fotoowl" onclick="openLightbox('assets/media/fotoowl_static.jpg', 'FotoOwl.ai: Studio Manager Static Post')">
+          <div class="tile-media">
+            <img src="assets/media/fotoowl_static.jpg" alt="FotoOwl Static Post Design" class="tile-img" loading="lazy">
+            <div class="tile-hover-overlay">
+              <span class="tile-inspect-pill">Inspect Artwork ⊕</span>
+            </div>
+          </div>
+          <div class="tile-caption">
+            <div class="tile-top-row">
+              <span class="tile-category">FotoOwl.ai • Static Creative</span>
+              <span class="tile-index-tag">[FOTOOWL // 02]</span>
+            </div>
+            <h2 class="tile-title">FotoOwl.ai: Studio Manager Static Post</h2>
+            <p class="tile-desc">
+              Product marketing creative highlighting automated lead capture: <em>"Introducing FotoOwl's Studio Manager - Captures Insta & WhatsApp Leads Automatically"</em>.
+            </p>
+            <div class="tile-action-footer">
+              <span>Static Ad Creative</span>
+              <span style="color: var(--accent-base);">Inspect Fullscreen ↗</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- FotoOwl 03: Social Carousel -->
+        <article class="gallery-tile" data-category="fotoowl" onclick="openLightbox('assets/media/fotoowl_static.jpg', 'FotoOwl.ai: Educational Carousel Series')">
+          <div class="tile-media">
+            <img src="assets/media/fotoowl_static.jpg" alt="FotoOwl Social Carousel" class="tile-img" loading="lazy">
+            <div class="tile-hover-overlay">
+              <span class="tile-inspect-pill">Inspect Carousel ⊕</span>
+            </div>
+          </div>
+          <div class="tile-caption">
+            <div class="tile-top-row">
+              <span class="tile-category">FotoOwl.ai • Social Carousel</span>
+              <span class="tile-index-tag">[FOTOOWL // 03]</span>
+            </div>
+            <h2 class="tile-title">FotoOwl.ai: Educational Carousel Series</h2>
+            <p class="tile-desc">
+              Multi-slide carousel architecture breaking down client booking flows, studio lead pipelines, and AI photography culling benefits.
+            </p>
+            <div class="tile-action-footer">
+              <span>Carousel Architecture</span>
+              <span style="color: var(--accent-base);">Inspect Fullscreen ↗</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- FotoOwl 04: Video Edit 1 (Refer Reel) -->
+        <article class="gallery-tile" data-category="fotoowl" onclick="openLightbox('assets/media/fotoowl_refer_reel.mp4', 'FotoOwl.ai: Refer Reel Video Edit', true)">
+          <div class="tile-media" style="position: relative; cursor: pointer;">
+            <img src="assets/media/fotoowl_thumbnail.jpg" alt="FotoOwl Refer Reel Video" class="tile-img" loading="lazy">
+            <div class="video-play-badge">▶</div>
+            <div class="tile-hover-overlay">
+              <span class="tile-inspect-pill">▶ Play Reel Video</span>
+            </div>
+          </div>
+          <div class="tile-caption">
+            <div class="tile-top-row">
+              <span class="tile-category">FotoOwl.ai • Video Edit 1</span>
+              <span class="tile-index-tag">[FOTOOWL // 04]</span>
+            </div>
+            <h2 class="tile-title">FotoOwl.ai: Refer Reel Video Edit</h2>
+            <p class="tile-desc">
+              Dynamic video edit designed for customer referral programs, featuring synchronized pacing, motion titles, and branded sound transitions.
+            </p>
+            <div class="tile-action-footer">
+              <span>Full Video Edit (MP4)</span>
+              <span style="color: var(--accent-base);">Click to Play Video ▶</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- FotoOwl 05: Video Edit 2 (Studio Feature Reel) -->
+        <article class="gallery-tile" data-category="fotoowl" onclick="openLightbox('assets/media/fotoowl_refer_reel.mp4', 'FotoOwl.ai: AI Studio Feature Video Edit', true)">
+          <div class="tile-media" style="position: relative; cursor: pointer;">
+            <img src="assets/media/fotoowl_static.jpg" alt="FotoOwl Studio Video" class="tile-img" loading="lazy">
+            <div class="video-play-badge">▶</div>
+            <div class="tile-hover-overlay">
+              <span class="tile-inspect-pill">▶ Play Reel Video</span>
+            </div>
+          </div>
+          <div class="tile-caption">
+            <div class="tile-top-row">
+              <span class="tile-category">FotoOwl.ai • Video Edit 2</span>
+              <span class="tile-index-tag">[FOTOOWL // 05]</span>
+            </div>
+            <h2 class="tile-title">FotoOwl.ai: Studio Feature Video Edit</h2>
+            <p class="tile-desc">
+              Short-form video showcasing the AI Studio Manager workflow, automated client inquiries, and seamless WhatsApp integrations.
+            </p>
+            <div class="tile-action-footer">
+              <span>Full Video Edit (MP4)</span>
+              <span style="color: var(--accent-base);">Click to Play Video ▶</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- ================= PRESENTATIONS SECTION ================= -->
 
         <!-- Item 01: Tanishq Presentation -->
         <article class="gallery-tile" data-category="presentations" onclick="window.open('https://canva.link/dl4ic0oz3a3hw4m', '_blank')">
@@ -162,6 +291,8 @@
           </div>
         </article>
 
+        <!-- ================= INFOGRAPHICS SECTION ================= -->
+
         <!-- Item 03: HUL Strategies Infographic -->
         <article class="gallery-tile" data-category="infographics" onclick="openLightbox('assets/media/image22.png', 'Strategies of Hindustan Unilever Limited (HUL) Infographic')">
           <div class="tile-media">
@@ -209,6 +340,8 @@
             </div>
           </div>
         </article>
+
+        <!-- ================= LOGOS & INVITATIONS SECTION ================= -->
 
         <!-- Item 05: Shree Vakratunda Logo Design -->
         <article class="gallery-tile" data-category="logos" onclick="openLightbox('assets/media/image25.png', 'Shree Vakratunda Calligraphy Logo & Identity')">
@@ -314,6 +447,8 @@
           </div>
         </article>
 
+        <!-- ================= PHOTOGRAPHY & VIDEOGRAPHY SECTION ================= -->
+
         <!-- Item 09: Photography Collection (6 Original Works) -->
         <article class="gallery-tile" data-category="photo-video">
           <div class="photo-subgrid">
@@ -354,13 +489,13 @@
               <span class="tile-category">Videography & Social Reel</span>
               <span class="tile-index-tag">[10 // INSTAGRAM REEL]</span>
             </div>
-            <h2 class="tile-title">Videography: Campus Spotlight & Editorial Reel</h2>
+            <h2 class="tile-title">Videography: Editorial & Campus Spotlight Reel</h2>
             <p class="tile-desc">
               Campus video directing, cinematic framing, and short-form video reel editing featuring the student delegation. Click thumbnail to watch the full video on Instagram.
             </p>
             <div class="tile-action-footer">
               <span>Instagram Video Reel</span>
-              <a href="#" id="insta-reel-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation(); openInstaVideo();" style="color: var(--accent-base); text-decoration: none;">Watch Video ↗</a>
+              <a href="https://www.instagram.com/reel/DaGPdH0uzrS/?vrfl=MTc4dHpkazQ2cmx5Nw%3D%3D" id="insta-reel-link" target="_blank" rel="noopener noreferrer" onclick="event.stopPropagation(); openInstaVideo();" style="color: var(--accent-base); text-decoration: none;">Watch Video ↗</a>
             </div>
           </div>
         </article>
@@ -369,11 +504,12 @@
     </section>
   </main>
 
-  <!-- Fullscreen Lightbox Modal -->
+  <!-- Fullscreen Lightbox Modal (Images & Video) -->
   <div id="lightbox" class="lightbox-backdrop" onclick="closeLightbox(event)">
     <div class="lightbox-card" onclick="event.stopPropagation()">
       <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close dialog">&times;</button>
-      <img id="lightbox-img" src="" alt="Enlarged view" class="lightbox-img">
+      <img id="lightbox-img" src="" alt="Enlarged view" class="lightbox-img" style="display: none;">
+      <video id="lightbox-video" controls playsinline class="lightbox-video" style="display: none; max-height: 80vh; max-width: 90vw;"></video>
       <div id="lightbox-caption" class="lightbox-caption"></div>
     </div>
   </div>
@@ -387,20 +523,42 @@
   </footer>
 
   <script>
-    function openLightbox(src, caption) {
-      document.getElementById('lightbox-img').src = src;
-      document.getElementById('lightbox-caption').textContent = caption;
+    function openLightbox(src, caption, isVideo = false) {
+      const imgEl = document.getElementById('lightbox-img');
+      const videoEl = document.getElementById('lightbox-video');
+      const captionEl = document.getElementById('lightbox-caption');
+
+      if (isVideo) {
+        imgEl.style.display = 'none';
+        videoEl.src = src;
+        videoEl.style.display = 'block';
+        videoEl.play().catch(() => {});
+      } else {
+        videoEl.pause();
+        videoEl.src = '';
+        videoEl.style.display = 'none';
+        imgEl.src = src;
+        imgEl.style.display = 'block';
+      }
+      captionEl.textContent = caption;
       document.getElementById('lightbox').classList.add('active');
     }
+
     function closeLightbox() {
+      const videoEl = document.getElementById('lightbox-video');
+      if (videoEl) {
+        videoEl.pause();
+        videoEl.src = '';
+      }
       document.getElementById('lightbox').classList.remove('active');
     }
+
     window.addEventListener('keydown', function(e) {
       if (e.key === 'Escape') closeLightbox();
     });
 
     // Instagram Video URL
-    let instaVideoUrl = 'https://www.instagram.com/reel/DaGPdH0uzrS/?vrfl=MTc4dHpkazQ2cmx5Nw%3D%3D'; // Will be updated with your link
+    let instaVideoUrl = 'https://www.instagram.com/reel/DaGPdH0uzrS/?vrfl=MTc4dHpkazQ2cmx5Nw%3D%3D';
 
     function openInstaVideo() {
       if (instaVideoUrl && instaVideoUrl !== '#') {
